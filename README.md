@@ -1,4 +1,4 @@
-# Frontend CV project
+# Frontend Developer CV project
 
 ![github pages](https://github.com/haosx86/haosx86.github.io/workflows/github%20pages/badge.svg?branch=source)
 
