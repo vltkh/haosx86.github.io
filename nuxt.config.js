@@ -1,5 +1,30 @@
+const modifyHtml = (html) => {
+  // Add amp-custom tag to added CSS and join all the CSS into one <style-tag>
+  let styleConcat = ''
+  html = html.replace(
+    /(<style\b[^<>]*>)([^<]*)(<\/style>)/gi,
+    (_match, _p1, p2) => {
+      styleConcat += p2
+      return ''
+    }
+  )
+
+  html = html.replace(
+    '</head>',
+    `<style data-vue-ssr>${styleConcat}</style></head>`
+  )
+
+  // Remove every script tag from generated HTML except the JSON type for the amp-state or the AMP templates
+  html = html.replace(
+    /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+    () => ''
+  )
+
+  return html
+}
+
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -44,7 +69,21 @@ export default {
    ** Build configuration
    */
   build: {
-    extractCSS: true,
-    extend(config, ctx) {}
+    extractCSS: false,
+    loading: false,
+    extend(_config, _ctx) {}
+  },
+  render: {
+    resourceHints: false
+  },
+  hooks: {
+    // This hook is called before generatic static html files for SPA mode
+    'generate:page': (page) => {
+      page.html = modifyHtml(page.html)
+    },
+    // This hook is called before rendering the html to the browser
+    'render:route': (_url, page) => {
+      page.html = modifyHtml(page.html)
+    }
   }
 }

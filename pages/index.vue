@@ -8,7 +8,7 @@
       <p>CV is under construction...</p>
       <p>
         But you can check cv
-        <a target="_blank" href="https://github.com/haosx86/cv">source code</a>
+        <a target="_blank" href="https://github.com/haosx86/haosx86.github.io/tree/source">source code</a>
       </p>
     </div>
   </div>
