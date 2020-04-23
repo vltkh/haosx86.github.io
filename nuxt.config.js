@@ -29,17 +29,23 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    htmlAttrs: {
+      lang: 'en-US'
+    },
+    title: 'VTerekhov CV',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Frontend developer CV'
+      },
+      {
+        name: 'keywords',
+        content: 'frontend, javascript, typescript, vue, webpack, nuxt'
       }
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -77,12 +83,7 @@ export default {
     resourceHints: false
   },
   hooks: {
-    // This hook is called before generatic static html files for SPA mode
     'generate:page': (page) => {
-      page.html = modifyHtml(page.html)
-    },
-    // This hook is called before rendering the html to the browser
-    'render:route': (_url, page) => {
       page.html = modifyHtml(page.html)
     }
   }
