@@ -1,6 +1,6 @@
-# cv
+# Frontend CV project
 
-> My CV
+![github pages](https://github.com/haosx86/haosx86.github.io/workflows/github%20pages/badge.svg?branch=source)
 
 ## Build Setup
 
@@ -18,5 +18,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
