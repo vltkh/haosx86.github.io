@@ -45,12 +45,18 @@ export default {
         name: 'keywords',
         content: 'frontend, javascript, typescript, vue, webpack, nuxt'
       }
+    ],
+    link: [
+      {
+        rel: 'icon',
+        href: 'data:;base64,iVBORw0KGgo='
+      }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: false,
   /*
    ** Global CSS
    */
@@ -76,7 +82,6 @@ export default {
    */
   build: {
     extractCSS: false,
-    loading: false,
     extend(_config, _ctx) {}
   },
   render: {

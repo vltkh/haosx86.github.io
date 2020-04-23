@@ -1,16 +1,14 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        dev CV
-      </h1>
-      <p>CV is under construction...</p>
-      <p>
-        But you can check cv
-        <a target="_blank" href="https://github.com/haosx86/haosx86.github.io/tree/source">source code</a>
-      </p>
-    </div>
+    <logo />
+    <h1 class="title">
+      dev CV
+    </h1>
+    <p>CV is under construction...</p>
+    <p>
+      But you can check cv
+      <a target="_blank" href="https://github.com/haosx86/haosx86.github.io/tree/source">source code</a>
+    </p>
   </div>
 </template>
 
@@ -33,6 +31,7 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .title {
