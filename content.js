@@ -78,6 +78,7 @@ export default {
     name: 'Vladimir Terekhov',
     emailLabel: 'Email me',
     specialization: 'Full Stack Web developer',
+    skillsLabel: 'Skills',
     experience: [
       {
         company: 'Distillery',
@@ -137,6 +138,7 @@ export default {
     ru: 'Владимир Терехов',
     emailLabel: 'Написать мне на почту',
     specialization: 'Full stack разработчик',
+    skillsLabel: 'Навыки',
     experience: [
       {
         ...companyGeneralInfo[0],

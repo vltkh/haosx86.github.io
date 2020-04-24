@@ -49,7 +49,6 @@ export default Vue.extend({
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   width: 1000px;
   margin: 30px auto;
-  animation: appearAnimation 0.5s normal forwards cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 .main-grid {
@@ -62,14 +61,5 @@ export default Vue.extend({
     'main ints' auto
     'proj proj' auto / auto 250px;
   background: #fff;
-}
-
-@keyframes appearAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 </style>
