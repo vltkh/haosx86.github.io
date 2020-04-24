@@ -2,17 +2,47 @@
   <nuxt />
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+<style lang="less">
+:root {
+  --text-color: #58677c;
+  --section-title-color: #434e5e;
+  --h1-color: #fff;
+  --h2-color: rgba(255, 255, 255, 0.9);
+  --link-color: rgba(255, 255, 255, 0.6);
+  --link-hover-color: #fff;
+  --delimiter-color: #8d9aad;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+
+  & svg path {
+    fill: var(--link-color);
+  }
+
+  &:hover {
+    color: var(--link-hover-color);
+
+    & svg path {
+      fill: var(--link-hover-color);
+    }
+  }
+}
+
+html,
+body {
+  font-family: monospace;
   font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: #f7f8fa;
 }
 
 *,
@@ -22,32 +52,27 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+@-ms-viewport {
+  width: device-width;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+.aside-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: var(--section-title-color);
+  position: relative;
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: var(--delimiter-color);
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <Grid lang="en" />
+  <Grid lang="ru" />
 </template>
 
 <script lang="ts">
