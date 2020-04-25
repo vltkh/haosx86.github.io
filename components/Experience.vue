@@ -76,6 +76,7 @@ export default Vue.extend({
   flex-direction: column;
   grid-area: main;
   padding-right: 30px;
+  margin-bottom: 3rem;
 }
 
 .experience-timeline {
@@ -84,6 +85,7 @@ export default Vue.extend({
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 0.5rem;
 
   &:before {
     content: '';
@@ -122,6 +124,14 @@ export default Vue.extend({
       'title company' auto
       'dates dates  ' auto / auto auto;
     margin-bottom: 0.5rem;
+
+    // prettier-ignore
+    .mobile({
+      grid-template:
+        'title' auto
+        'company' auto
+        'dates' auto / auto auto auto;
+    });
   }
 
   &__position {
@@ -137,6 +147,10 @@ export default Vue.extend({
     color: @secondary-color;
     font-size: 0.875rem;
     font-weight: 500;
+    // prettier-ignore
+    .mobile({
+      text-align: left;
+    });
   }
 
   &__dates {
@@ -147,11 +161,15 @@ export default Vue.extend({
 
   &__responsobilities-list {
     padding-bottom: 1.5rem;
+    // prettier-ignore
+    .mobile({
+      margin-left: -20px;
+    });
   }
 }
 
 .technologies-list {
-  max-width: 75%;
+  max-width: 380px;
   &__elem {
     color: #fff;
     background-color: @main-color;

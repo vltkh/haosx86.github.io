@@ -53,9 +53,8 @@ export default Vue.extend({
   width: 100%;
   margin: 0;
 
-  // prettier-ignore
-
   &_shadow {
+    // prettier-ignore
     .desktop({
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
       max-width: 1000px;
@@ -74,5 +73,17 @@ export default Vue.extend({
     'main ints' auto
     'proj proj' auto / auto 225px;
   background: #fff;
+
+  // prettier-ignore
+  .mobile({
+    padding: 1.5rem;
+    grid-template:
+    'main' auto
+    'skill' auto
+    'educ' auto
+    'lang' auto
+    'ints' auto
+    'proj' auto / auto;
+  });
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <PhotoPlaceholder />
+    <PhotoPlaceholder class="photo-placeholder" />
     <div class="header__info">
       <h1 class="name">
         {{ name }}
@@ -89,6 +89,12 @@ export default Vue.extend({
 <style lang="less">
 @import '~assets/global.less';
 
+.photo-placeholder {
+  // prettier-ignore
+  .mobile({
+    display: none;
+  });
+}
 .header {
   width: 100%;
   display: grid;
@@ -101,10 +107,19 @@ export default Vue.extend({
     grid-template-columns: 178px auto 275px;
   });
 
+  // prettier-ignore
+  .mobile({
+    grid-template-columns: auto;
+  });
+
   &__info {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 1rem;
+    // prettier-ignore
+    .mobile({
+      padding: 0 0 1rem 0;
+    });
   }
 }
 
@@ -137,12 +152,20 @@ export default Vue.extend({
   font-size: 2.25rem;
   letter-spacing: 0.175rem;
   font-weight: 900;
+  // prettier-ignore
+  .mobile({
+    font-size: 1.7rem;
+  });
 }
 
 .specialization {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: @header-h2-color;
+  // prettier-ignore
+  .mobile({
+    font-size: 1.1rem;
+  });
 }
 
 .email-link {

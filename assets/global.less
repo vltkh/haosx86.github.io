@@ -4,10 +4,16 @@
 @header-h2-color: rgba(255, 255, 255, 0.9);
 @link-color: #fff;
 @delimiter-color: #8d9aad;
-@desktop-breakpoint: 1000px;
 @body-bg-color: #f7f8fa;
 @badge-light-bg: #e8e9ea;
 
+@desktop-breakpoint: 1000px;
+@mobile-breakpoint: 767px;
+
 .desktop(@rules) {
   @media (min-width: @desktop-breakpoint) { @rules(); }
+}
+
+.mobile(@rules) {
+  @media (max-width: @mobile-breakpoint) { @rules(); }
 }
