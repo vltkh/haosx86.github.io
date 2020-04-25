@@ -8,13 +8,22 @@
         class="experience-article"
       >
         <header class="experience-article__header">
-          <h2 class="experience-article__position" v-text="experienceElem.position" />
-          <span class="experience-article__company" v-text="experienceElem.company" />
+          <h2
+            class="experience-article__position"
+            v-text="experienceElem.position"
+          />
           <span
-            class="experience-article__dates"
-          >{{ experienceElem.startDate }} - {{ experienceElem.tillDate }}</span>
+            class="experience-article__company"
+            v-text="experienceElem.company"
+          />
+          <span class="experience-article__dates">
+            {{ experienceElem.startDate }} - {{ experienceElem.tillDate }}
+          </span>
         </header>
-        <h3 class="experience-article__subheader" v-text="keyResponsobilitiesLabel" />
+        <h3
+          class="experience-article__subheader"
+          v-text="keyResponsobilitiesLabel"
+        />
         <ul class="experience-article__responsobilities-list">
           <li
             v-for="(resp, respIdx) in experienceElem.keyResponsobilities"
@@ -123,7 +132,7 @@ export default Vue.extend({
   &__dates {
     grid-area: dates;
     font-size: 0.875rem;
-    color: #aab4c3;
+    font-style: italic;
   }
 }
 </style>
