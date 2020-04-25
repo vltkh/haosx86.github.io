@@ -46,9 +46,16 @@ export default Vue.extend({
 .wrapper {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-  width: 1000px;
-  margin: 30px auto;
+  width: 100vw;
+  margin: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 30px auto;
+  }
 }
 
 .main-grid {
@@ -59,7 +66,7 @@ export default Vue.extend({
     'main educ' auto
     'main lang' auto
     'main ints' auto
-    'proj proj' auto / auto 250px;
+    'proj proj' auto / auto 225px;
   background: #fff;
 }
 </style>
