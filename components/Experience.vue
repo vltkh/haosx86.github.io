@@ -32,6 +32,15 @@
             v-text="resp"
           />
         </ul>
+        <h3 class="experience-article__subheader" v-text="technologiesLabel" />
+        <ul class="tags-list technologies-list">
+          <li
+            v-for="(technology, technologyIdx) in experienceElem.technologies"
+            :key="technologyIdx"
+            class="tags-list__elem technologies-list__elem"
+            v-text="technology"
+          />
+        </ul>
       </article>
     </div>
   </section>
@@ -133,6 +142,18 @@ export default Vue.extend({
     grid-area: dates;
     font-size: 0.875rem;
     font-style: italic;
+  }
+
+  &__responsobilities-list {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.technologies-list {
+  max-width: 75%;
+  &__elem {
+    color: #fff;
+    background-color: #434e5e;
   }
 }
 </style>

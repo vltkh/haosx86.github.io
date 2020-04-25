@@ -30,11 +30,11 @@
     </ul>
 
     <h3 class="skill-type" v-text="otherSkillsLabel" />
-    <ul class="other-skills">
+    <ul class="tags-list other-skills">
       <li
         v-for="(skill, index) in skills.other"
         :key="index"
-        class="other-skills__elem"
+        class="tags-list__elem other-skills__elem"
         v-text="skill"
       />
     </ul>
@@ -100,24 +100,7 @@ export default Vue.extend({
 }
 
 .other-skills {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0.5rem 0 0 0;
-
   &__elem {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    margin: 0 0.3rem 0.3rem 0;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
     background-color: #e8e9ea;
   }
 }

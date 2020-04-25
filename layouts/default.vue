@@ -9,8 +9,7 @@
   --main-color: #434e5e;
   --h1-color: #fff;
   --h2-color: rgba(255, 255, 255, 0.9);
-  --link-color: rgba(255, 255, 255, 0.6);
-  --link-hover-color: #fff;
+  --link-color: #fff;
   --delimiter-color: #8d9aad;
 }
 
@@ -23,11 +22,7 @@ a {
   }
 
   &:hover {
-    color: var(--link-hover-color);
-
-    & svg path {
-      fill: var(--link-hover-color);
-    }
+    text-decoration: underline;
   }
 }
 
@@ -76,6 +71,28 @@ body {
     width: 100%;
     height: 2px;
     background: var(--delimiter-color);
+  }
+}
+
+.tags-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 0 0;
+
+  &__elem {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    margin: 0 0.3rem 0.3rem 0;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
   }
 }
 </style>

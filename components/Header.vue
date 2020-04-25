@@ -15,7 +15,7 @@
         rel="noreferrer"
       >
         <EmailIcon />
-        <span class="email-link__text" v-text="emailLabel" />
+        {{ emailLabel }}
       </a>
     </div>
     <nav class="links-nav">
@@ -136,9 +136,5 @@ export default Vue.extend({
   flex-direction: row;
   align-items: center;
   margin-right: auto;
-
-  &__text {
-    text-decoration: underline;
-  }
 }
 </style>

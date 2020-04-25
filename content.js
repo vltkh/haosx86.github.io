@@ -50,7 +50,8 @@ const general = {
       'Linux',
       'CI/CD',
       'SSR',
-      'Unit Testing'
+      'Unit Testing',
+      'Svelte'
     ]
   }
 }
@@ -89,7 +90,7 @@ export default {
     experienceLabel: 'Work Experience',
     experience: [
       {
-        company: 'Distillery',
+        ...companyGeneralInfo[0],
         position: 'Fullstack Web Developer',
         startDate: 'April 2016',
         tillDate: 'Present',
@@ -98,22 +99,10 @@ export default {
           'Performing Code review',
           'Setting up frontend and backend environments for new projects',
           'Develop, test and support web applications'
-        ],
-        technologies: [
-          'VueJS',
-          'NuxtJS',
-          'JS/TS',
-          'Webpack',
-          'Gulp',
-          'NodeJS',
-          'PostgeSQL',
-          'MySQL',
-          'HTML/CSS/LESS/Stylus',
-          'Nginx'
         ]
       },
       {
-        company: 'Hadrout',
+        ...companyGeneralInfo[1],
         position: 'Junior Frontend Developer',
         startDate: 'July 2013',
         tillDate: 'December 2013',
@@ -139,6 +128,7 @@ export default {
         level: 'Native'
       }
     ],
+    technologiesLabel: 'Technologies used',
     otherSkillsLabel: 'Other skills',
     interestsLabel: 'Interests',
     interests: ['PC modding', 'Embedded electronics']
@@ -167,7 +157,7 @@ export default {
       },
       {
         ...companyGeneralInfo[1],
-        position: 'Junior Frontend Developer',
+        position: 'Junior Frontend Разработчик',
         startDate: 'Июль 2013',
         tillDate: 'Декабрь 2013',
         keyResponsobilities: ['Разработка тем для CMS', 'Рефакторинг кода']
@@ -192,6 +182,7 @@ export default {
         level: 'Носитель'
       }
     ],
+    technologiesLabel: 'Основные технологии',
     otherSkillsLabel: 'Допольнительные навыки',
     interestsLabel: 'Интересы',
     interests: ['Эксперименты с ПК железом', 'Электроника']
