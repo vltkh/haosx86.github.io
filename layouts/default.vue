@@ -6,6 +6,7 @@
 :root {
   --text-color: #58677c;
   --section-title-color: #434e5e;
+  --main-color: #434e5e;
   --h1-color: #fff;
   --h2-color: rgba(255, 255, 255, 0.9);
   --link-color: rgba(255, 255, 255, 0.6);
@@ -43,6 +44,7 @@ body {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background: #f7f8fa;
+  color: var(--main-color);
 }
 
 *,
@@ -56,7 +58,7 @@ body {
   width: device-width;
 }
 
-.aside-title {
+.section-title {
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -64,6 +66,7 @@ body {
   margin-bottom: 1rem;
   color: var(--section-title-color);
   position: relative;
+  margin-bottom: 1rem;
 
   &:after {
     content: '';
@@ -71,7 +74,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 1.5px;
+    height: 2px;
     background: var(--delimiter-color);
   }
 }

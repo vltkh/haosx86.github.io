@@ -1,24 +1,26 @@
 <template>
-  <div class="education">
-    <h2 class="aside-title">
+  <section class="education">
+    <h2 class="section-title">
       {{ educationLabel }}
     </h2>
-    <div
-      v-for="(item, index) in education"
-      :key="index"
-      class="education-element"
-    >
-      <h3 class="education-element__place">
-        {{ item.place }}
-      </h3>
-      <p class="education-element__specialization">
-        {{ item.specialization }}
-      </p>
-      <p class="education-element__years">
-        {{ item.years }}
-      </p>
-    </div>
-  </div>
+    <ul class="education-list">
+      <li
+        v-for="(item, index) in education"
+        :key="index"
+        class="education-list__elem"
+      >
+        <span class="education-list__place">
+          {{ item.place }}
+        </span>
+        <span class="education-list__specialization">
+          {{ item.specialization }}
+        </span>
+        <span class="education-list__years">
+          {{ item.years }}
+        </span>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
@@ -43,7 +45,7 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 .education {
   display: flex;
   flex-direction: column;
@@ -51,9 +53,18 @@ export default Vue.extend({
   margin: 0 0 3rem 0;
 }
 
-.education-element {
-  display: flex;
-  flex-direction: column;
+.education-list {
+  list-style: none;
+  padding-left: 0;
+
+  &__elem {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
 
   &__place {
     font-size: 1rem;

@@ -1,19 +1,19 @@
 <template>
-  <div class="language">
-    <h2 class="aside-title">
+  <section class="language">
+    <h2 class="section-title">
       {{ languageLabel }}
     </h2>
-    <div
-      v-for="(item, index) in language"
-      :key="index"
-      class="language-element"
-    >
-      <h3 class="language-element__language">
-        {{ item.language }}
-        <span class="language-element__level"> ({{ item.level }}) </span>
-      </h3>
-    </div>
-  </div>
+    <ul class="language-list">
+      <li
+        v-for="(item, index) in language"
+        :key="index"
+        class="language-list__item"
+      >
+        <span class="language-list__language" v-text="item.language" />
+        <span class="language-list__level" v-text="`(${item.level})`" />
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
@@ -38,15 +38,21 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .language {
   display: flex;
   flex-direction: column;
   grid-area: lang;
+  margin: 0 0 3rem 0;
 }
 
-.language-element {
-  display: flex;
+.language-list {
+  list-style: none;
+  padding-left: 0;
+
+  &__item {
+    margin-bottom: 0.5rem;
+  }
 
   &__language {
     font-size: 1rem;

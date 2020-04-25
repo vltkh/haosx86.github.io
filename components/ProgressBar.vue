@@ -1,5 +1,11 @@
 <template>
-  <div class="progress-bar-bg">
+  <div
+    role="progressbar"
+    :aria-valuenow="progress"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    class="progress-bar-bg"
+  >
     <div
       class="progress-bar"
       :style="{ transform: `translate3d(${progress - 100}%, 0, 0)` }"
@@ -21,7 +27,7 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 .progress-bar {
   height: 100%;
   background-color: #434e5e;

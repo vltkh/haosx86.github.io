@@ -32,18 +32,18 @@ export default {
     htmlAttrs: {
       lang: 'en-US'
     },
-    title: 'VTerekhov CV',
+    title: 'Fullstack dev VTerekhov',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Frontend developer CV'
+        content: 'Fullstack developer CV'
       },
       {
         name: 'keywords',
-        content: 'frontend, javascript, typescript, vue, webpack, nuxt'
+        content: 'frontend, backend, javascript, typescript, vue, webpack, nuxt'
       }
     ],
     link: [

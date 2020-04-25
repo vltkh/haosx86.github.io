@@ -6,7 +6,7 @@ const general = {
     frontend: [
       {
         technology: 'Vue/Nuxt',
-        level: 85
+        level: 80
       },
       {
         technology: 'Javascript',
@@ -18,11 +18,11 @@ const general = {
       },
       {
         technology: 'Gulp/Webpack/rollup',
-        level: 78
+        level: 80
       },
       {
         technology: 'Angular',
-        level: 50
+        level: 55
       }
     ],
     backend: [
@@ -39,13 +39,18 @@ const general = {
         level: 66
       },
       {
-        technology: 'PHP',
-        level: 68
-      },
-      {
         technology: 'Nginx',
         level: 51
       }
+    ],
+    other: [
+      'Git',
+      'Code review',
+      'PHP',
+      'Linux',
+      'CI/CD',
+      'SSR',
+      'Unit Testing'
     ]
   }
 }
@@ -75,14 +80,17 @@ const companyGeneralInfo = [
 export default {
   en: {
     ...general,
+    headerNavLabel: 'External links',
     name: 'Vladimir Terekhov',
     emailLabel: 'Email me',
-    specialization: 'Full Stack Web developer',
+    specialization: 'Fullstack Web developer',
     skillsLabel: 'Skills',
+    keyResponsobilitiesLabel: 'Key Responsobilities',
+    experienceLabel: 'Work Experience',
     experience: [
       {
         company: 'Distillery',
-        position: 'Full-stack Web Developer',
+        position: 'Fullstack Web Developer',
         startDate: 'April 2016',
         tillDate: 'Present',
         keyResponsobilities: [
@@ -131,18 +139,23 @@ export default {
         level: 'Native'
       }
     ],
+    otherSkillsLabel: 'Other skills',
+    interestsLabel: 'Interests',
     interests: ['PC modding', 'Embedded electronics']
   },
   ru: {
     ...general,
-    ru: 'Владимир Терехов',
+    headerNavLabel: 'Внешние ссылки',
+    name: 'Владимир Терехов',
     emailLabel: 'Написать мне на почту',
-    specialization: 'Full stack разработчик',
+    specialization: 'Fullstack разработчик',
     skillsLabel: 'Навыки',
+    keyResponsobilitiesLabel: 'Основные обязанности',
+    experienceLabel: 'Опыт работы',
     experience: [
       {
         ...companyGeneralInfo[0],
-        position: 'Full-stack Web разработчик',
+        position: 'Fullstack Web разработчик',
         startDate: 'Апрель 2016',
         tillDate: 'Настоящее время',
         keyResponsobilities: [
@@ -155,15 +168,15 @@ export default {
       {
         ...companyGeneralInfo[1],
         position: 'Junior Frontend Developer',
-        startDate: 'July 2013',
-        tillDate: 'December 2013',
+        startDate: 'Июль 2013',
+        tillDate: 'Декабрь 2013',
         keyResponsobilities: ['Разработка тем для CMS', 'Рефакторинг кода']
       }
     ],
     educationLabel: 'Образование',
     education: [
       {
-        place: 'ЮФУ',
+        place: 'Южный Федеральный Университет',
         specialization: 'Программная Инженерия',
         years: '2011-2015'
       }
@@ -179,6 +192,8 @@ export default {
         level: 'Носитель'
       }
     ],
+    otherSkillsLabel: 'Допольнительные навыки',
+    interestsLabel: 'Интересы',
     interests: ['Эксперименты с ПК железом', 'Электроника']
   }
 }

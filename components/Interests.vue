@@ -1,5 +1,15 @@
 <template>
-  <div class="interests"></div>
+  <section class="interests">
+    <h2 class="section-title" v-text="interestsLabel" />
+    <ul class="interests-list">
+      <li
+        v-for="(interest, index) in interests"
+        :key="index"
+        class="interests-list__elem"
+        v-text="interest"
+      />
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
@@ -24,10 +34,22 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="less">
 .interests {
   display: flex;
+  flex-direction: column;
   grid-area: ints;
-  min-height: 200px;
+}
+
+.interests-list {
+  list-style: none;
+  padding-left: 0;
+
+  &__elem {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: var(--section-title-color);
+    font-weight: 700;
+  }
 }
 </style>

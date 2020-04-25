@@ -1,5 +1,5 @@
 <template>
-  <div class="projects"></div>
+  <section class="projects"></section>
 </template>
 
 <script lang="ts">
@@ -24,7 +24,7 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="less">
 .projects {
   display: flex;
   grid-area: proj;
