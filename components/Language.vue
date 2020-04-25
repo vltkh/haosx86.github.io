@@ -39,6 +39,8 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import '~assets/global.less';
+
 .language {
   display: flex;
   flex-direction: column;
@@ -56,7 +58,6 @@ export default Vue.extend({
 
   &__language {
     font-size: 1rem;
-    color: var(--section-title-color);
     font-weight: 700;
   }
 

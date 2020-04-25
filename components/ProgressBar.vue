@@ -28,9 +28,11 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import '~assets/global.less';
+
 .progress-bar {
   height: 100%;
-  background-color: #434e5e;
+  background-color: @main-color;
   width: 100%;
   animation: progress-bar 2s;
   &-bg {

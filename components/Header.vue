@@ -31,7 +31,7 @@
             <span class="links-list__link-text" v-text="github" />
           </a>
         </li>
-        <li class="links-list-elem">
+        <li class="links-list__elem">
           <a
             :href="vk"
             target="_blank"
@@ -41,6 +41,13 @@
             <VkIcon />
             <span class="links-list__link-text" v-text="vk" />
           </a>
+        </li>
+        <li class="links-list__elem">
+          <a
+            :href="switchLanguageURL"
+            :hreflang="switchLanguageCode"
+            v-text="switchLanguageLabel"
+          />
         </li>
       </ul>
     </nav>
@@ -80,12 +87,19 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import '~assets/global.less';
+
 .header {
   width: 100%;
   display: grid;
   padding: 1.5rem;
-  grid-template-columns: 178px auto 275px;
-  background: #434e5e;
+  grid-template-columns: 0 auto 275px;
+  background: @main-color;
+
+  // prettier-ignore
+  .desktop({
+    grid-template-columns: 178px auto 275px;
+  });
 
   &__info {
     display: flex;
@@ -119,7 +133,7 @@ export default Vue.extend({
 }
 
 .name {
-  color: var(--h1-color);
+  color: @header-h1-color;
   font-size: 2.25rem;
   letter-spacing: 0.175rem;
   font-weight: 900;
@@ -128,7 +142,7 @@ export default Vue.extend({
 .specialization {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--h2-color);
+  color: @header-h2-color;
 }
 
 .email-link {

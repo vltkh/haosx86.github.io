@@ -46,6 +46,8 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import '~assets/global.less';
+
 .education {
   display: flex;
   flex-direction: column;
@@ -68,7 +70,6 @@ export default Vue.extend({
 
   &__place {
     font-size: 1rem;
-    color: var(--section-title-color);
     font-weight: 700;
   }
 

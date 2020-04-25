@@ -1,8 +1,10 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper wrapper_shadow">
     <Header :lang="lang" />
     <main class="main-grid">
-      <Experience :lang="lang" />
+      <div class="wrapper">
+        <Experience :lang="lang" />
+      </div>
       <Skills :lang="lang" />
       <Education :lang="lang" />
       <Language :lang="lang" />
@@ -42,19 +44,23 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="less">
+@import '~assets/global.less';
+
 .wrapper {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   margin: 0;
-}
 
-@media screen and (min-width: 1000px) {
-  .wrapper {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
-    margin: 30px auto;
+  // prettier-ignore
+
+  &_shadow {
+    .desktop({
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+      max-width: 1000px;
+      margin: 5px auto 30px auto;
+    });
   }
 }
 

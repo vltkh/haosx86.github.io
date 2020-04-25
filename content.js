@@ -69,7 +69,8 @@ const companyGeneralInfo = [
       'PostgeSQL',
       'MySQL',
       'HTML/CSS/LESS/Stylus',
-      'Nginx'
+      'Nginx',
+      'Wordpress'
     ]
   },
   {
@@ -81,6 +82,9 @@ const companyGeneralInfo = [
 export default {
   en: {
     ...general,
+    switchLanguageLabel: 'Switch to RU',
+    switchLanguageURL: '/ru/',
+    switchLanguageCode: 'ru',
     headerNavLabel: 'External links',
     name: 'Vladimir Terekhov',
     emailLabel: 'Email me',
@@ -135,6 +139,9 @@ export default {
   },
   ru: {
     ...general,
+    switchLanguageLabel: 'Перейти к английской версии',
+    switchLanguageURL: '/',
+    switchLanguageCode: 'en',
     headerNavLabel: 'Внешние ссылки',
     name: 'Владимир Терехов',
     emailLabel: 'Написать мне на почту',

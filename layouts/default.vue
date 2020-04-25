@@ -3,22 +3,14 @@
 </template>
 
 <style lang="less">
-:root {
-  --text-color: #58677c;
-  --section-title-color: #434e5e;
-  --main-color: #434e5e;
-  --h1-color: #fff;
-  --h2-color: rgba(255, 255, 255, 0.9);
-  --link-color: #fff;
-  --delimiter-color: #8d9aad;
-}
+@import '~assets/global.less';
 
 a {
-  color: var(--link-color);
+  color: @link-color;
   text-decoration: none;
 
   & svg path {
-    fill: var(--link-color);
+    fill: @link-color;
   }
 
   &:hover {
@@ -38,8 +30,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: #f7f8fa;
-  color: var(--main-color);
+  background: @body-bg-color;
+  color: @main-color;
 }
 
 *,
@@ -59,7 +51,6 @@ body {
   text-transform: uppercase;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  color: var(--section-title-color);
   position: relative;
   margin-bottom: 1rem;
 
@@ -70,7 +61,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: var(--delimiter-color);
+    background: @delimiter-color;
   }
 }
 

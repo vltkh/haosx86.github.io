@@ -9,16 +9,17 @@ const modifyHtml = (html) => {
     }
   )
 
-  html = html.replace(
-    '</head>',
-    `<style data-vue-ssr>${styleConcat}</style></head>`
-  )
+  html = html.replace('</head>', `<style>${styleConcat}</style></head>`)
 
   // Remove every script tag from generated HTML except the JSON type for the amp-state or the AMP templates
-  html = html.replace(
-    /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
-    () => ''
-  )
+  html = html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+    .replace(/ data-n-head-ssr/gi, '')
+    .replace(/ data-n-head="ssr"/gi, '')
+    .replace(/ data-server-rendered="true"/gi, '')
+    .replace(/ id="__nuxt"/gi, '')
+    .replace(/ id="__layout"/gi, '')
+    .replace(/ data-hid="description"/gi, '')
 
   return html
 }

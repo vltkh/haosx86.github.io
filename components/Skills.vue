@@ -68,6 +68,8 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import '~assets/global.less';
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -90,18 +92,16 @@ export default Vue.extend({
 
 .skills-type {
   font-size: 1rem;
-  color: var(--section-title-color);
   font-weight: 700;
 }
 
 .skill-name {
   font-size: 0.8125rem;
-  color: var(--section-title-color);
 }
 
 .other-skills {
   &__elem {
-    background-color: #e8e9ea;
+    background-color: @badge-light-bg;
   }
 }
 </style>

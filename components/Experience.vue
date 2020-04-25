@@ -69,6 +69,8 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import '~assets/global.less';
+
 .experience {
   display: flex;
   flex-direction: column;
@@ -109,7 +111,7 @@ export default Vue.extend({
     top: 3px;
     width: 15px;
     height: 15px;
-    border: 4px solid #58677c;
+    border: 4px solid @secondary-color;
     background: white;
     border-radius: 50%;
   }
@@ -125,7 +127,6 @@ export default Vue.extend({
   &__position {
     grid-area: title;
     font-size: 1.125rem;
-    color: #434e5e;
     line-height: 1;
     margin-bottom: 0.3rem;
   }
@@ -133,7 +134,7 @@ export default Vue.extend({
   &__company {
     grid-area: company;
     text-align: right;
-    color: #58677c;
+    color: @secondary-color;
     font-size: 0.875rem;
     font-weight: 500;
   }
@@ -153,7 +154,7 @@ export default Vue.extend({
   max-width: 75%;
   &__elem {
     color: #fff;
-    background-color: #434e5e;
+    background-color: @main-color;
   }
 }
 </style>
