@@ -34,7 +34,12 @@ export default Vue.extend({
   height: 100%;
   background-color: @main-color;
   width: 100%;
-  animation: progress-bar 2s;
+
+  // prettier-ignore
+  .desktop({
+    animation: progress-bar 2s;
+  });
+
   &-bg {
     display: flex;
     height: 0.6rem;
