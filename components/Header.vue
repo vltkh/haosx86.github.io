@@ -99,12 +99,12 @@ export default Vue.extend({
   width: 100%;
   display: grid;
   padding: 1.5rem;
-  grid-template-columns: 0 auto 275px;
+  grid-template-columns: 0 auto auto;
   background: @main-color;
 
   // prettier-ignore
   .desktop({
-    grid-template-columns: 178px auto 275px;
+    grid-template-columns: 178px auto auto;
   });
 
   // prettier-ignore
@@ -115,7 +115,7 @@ export default Vue.extend({
   &__info {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 1rem;
+    padding: 0 1rem;
     // prettier-ignore
     .mobile({
       padding: 0 0 1rem 0;

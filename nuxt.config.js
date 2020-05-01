@@ -20,6 +20,7 @@ const modifyHtml = (html) => {
     .replace(/ id="__nuxt"/gi, '')
     .replace(/ id="__layout"/gi, '')
     .replace(/ data-hid="description"/gi, '')
+    .replace(/data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en-US%22%7D%7D"/gi, '')
 
   return html
 }
