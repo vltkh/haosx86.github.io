@@ -41,7 +41,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Fullstack developer CV'
+        content: 'Fullstack developer resume'
       },
       {
         name: 'keywords',

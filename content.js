@@ -1,7 +1,7 @@
 const general = {
   github: 'https://github.com/haosx86',
   vk: 'https://vk.com/xtxtv',
-  email: 'haosx86+cv@gmail.com',
+  email: 'haosx86+dev@gmail.com',
   skills: {
     frontend: [
       {
