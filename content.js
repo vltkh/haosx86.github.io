@@ -162,7 +162,8 @@ export default {
       {
         name: 'This Resume page',
         description: [
-          'Nuxt.js (as static page generator), TypeScript, GitHub CI and GitHub Pages were used.'
+          'Nuxt.js (as static page generator), TypeScript, GitHub CI and GitHub Pages were used.',
+          '100% static bundle without JS. Total page size -  9kb Gzipped. 100/100 Google PageSpeed Insights score. Responsive design.'
         ],
         links: [
           {
@@ -255,7 +256,8 @@ export default {
       {
         name: 'Данное резюме',
         description: [
-          'Были использованы Nuxt.js (для генерации статических страниц), TypeScript, GitHub CI и GitHub Pages.'
+          'Были использованы Nuxt.js (для генерации статических страниц), TypeScript, GitHub CI и GitHub Pages.',
+          '100% статичная сборка без JS. Общий размер -  9kb Gzipped. 100/100 очков в тесте Google PageSpeed Insights. Адаптивная верстка.'
         ],
         links: [
           {

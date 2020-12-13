@@ -69,8 +69,12 @@ export default Vue.extend({
     color: #315d9e;
   }
 
-  &__description-p:last-of-type {
-    margin: 0 0 16px 0;
+  &__description-p {
+    text-indent: 1rem;
+
+    &:last-of-type {
+      margin: 0 0 16px 0;
+    }
   }
 }
 </style>
