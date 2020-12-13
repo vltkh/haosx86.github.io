@@ -68,10 +68,9 @@ export default Vue.extend({
   padding: 3rem;
   grid-template:
     'main skill' auto
-    'main educ' auto
-    'main lang' auto
-    'main ints' auto
-    'proj proj' auto / auto 225px;
+    'proj educ' auto
+    'proj lang' auto
+    'proj ints' auto / auto 225px;
   background: #fff;
 
   // prettier-ignore
@@ -79,11 +78,11 @@ export default Vue.extend({
     padding: 1.5rem;
     grid-template:
     'main' auto
+    'proj' auto
     'skill' auto
     'educ' auto
     'lang' auto
-    'ints' auto
-    'proj' auto / auto;
+    'ints' auto / auto;
   });
 }
 </style>

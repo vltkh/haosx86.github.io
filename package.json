@@ -1,7 +1,7 @@
 {
-  "name": "cv",
-  "version": "1.0.0",
-  "description": "My CV",
+  "name": "vterekhov-resume",
+  "version": "1.1.0",
+  "description": "Fullstack dev resume",
   "author": "Vterekhov",
   "private": true,
   "scripts": {

@@ -41,6 +41,7 @@ export default Vue.extend({
   display: flex;
   flex-direction: column;
   grid-area: ints;
+  margin: 0 0 3rem 0;
 }
 
 .interests-list {

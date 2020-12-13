@@ -135,7 +135,43 @@ export default {
     technologiesLabel: 'Technologies used',
     otherSkillsLabel: 'Other skills',
     interestsLabel: 'Interests',
-    interests: ['PC modding', 'Embedded electronics']
+    interests: ['PC modding', 'Embedded electronics'],
+    petProjectsTitle: 'Pet projects',
+    petProjects: [
+      {
+        name: 'Chess notation visualisation tool',
+        description: [
+          'This is a simple visualisation tool for chess Algebraic Notation',
+          'Vue3, TypeScript, GitHub CI and GitHub Pages were used.'
+        ],
+        links: [
+          {
+            text: 'Visualisation tool',
+            url: 'https://haosx86.github.io/chess-viewer/'
+          },
+          {
+            text: 'GitHub Repo',
+            url: 'https://github.com/haosx86/chess-viewer'
+          },
+          {
+            text: 'Algebraic notation Wiki page',
+            url: 'https://en.wikipedia.org/wiki/Algebraic_notation_(chess)'
+          }
+        ]
+      },
+      {
+        name: 'This Resume page',
+        description: [
+          'Nuxt.js (as static page generator), TypeScript, GitHub CI and GitHub Pages were used.'
+        ],
+        links: [
+          {
+            text: 'GitHub Repo',
+            url: 'https://github.com/haosx86/haosx86.github.io'
+          }
+        ]
+      }
+    ]
   },
   ru: {
     ...general,
@@ -192,6 +228,42 @@ export default {
     technologiesLabel: 'Основные технологии',
     otherSkillsLabel: 'Допольнительные навыки',
     interestsLabel: 'Интересы',
-    interests: ['Эксперименты с ПК железом', 'Электроника']
+    interests: ['Эксперименты с ПК железом', 'Электроника'],
+    petProjectsTitle: 'Pet проекты',
+    petProjects: [
+      {
+        name: 'Визуализатор Алгебраической нотации шахматных партий',
+        description: [
+          'Были использованы Vue3, TypeScript, GitHub CI и GitHub Pages.'
+        ],
+        links: [
+          {
+            text: 'Визуализатор',
+            url: 'https://haosx86.github.io/chess-viewer/'
+          },
+          {
+            text: 'GitHub репозиторий',
+            url: 'https://github.com/haosx86/chess-viewer'
+          },
+          {
+            text: 'Вики страница об Алгебраической нотации',
+            url:
+              'https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F'
+          }
+        ]
+      },
+      {
+        name: 'Данное резюме',
+        description: [
+          'Были использованы Nuxt.js (для генерации статических страниц), TypeScript, GitHub CI и GitHub Pages.'
+        ],
+        links: [
+          {
+            text: 'GitHub Репозиторий',
+            url: 'https://github.com/haosx86/haosx86.github.io'
+          }
+        ]
+      }
+    ]
   }
 }
