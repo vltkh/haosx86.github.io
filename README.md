@@ -1,4 +1,4 @@
-# Web Developer CV project
+# VTerekhov Resume
 
 ![github pages](https://github.com/haosx86/haosx86.github.io/workflows/github%20pages/badge.svg?branch=source)
 
