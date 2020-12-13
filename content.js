@@ -125,7 +125,7 @@ export default {
     language: [
       {
         language: 'English',
-        level: 'Intermediate'
+        level: 'Intermediate+'
       },
       {
         language: 'Russian',
@@ -218,7 +218,7 @@ export default {
     language: [
       {
         language: 'English',
-        level: 'Intermediate'
+        level: 'Intermediate+'
       },
       {
         language: 'Русский',
