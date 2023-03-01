@@ -5,30 +5,38 @@ const general = {
   skills: {
     frontend: [
       {
+        technology: 'Vue/Quasar',
+        level: 85
+      },
+      {
         technology: 'Vue/Nuxt',
         level: 80
       },
       {
         technology: 'Javascript',
-        level: 80
-      },
-      {
-        technology: 'HTML/CSS/LESS/Stylus/etc',
         level: 95
       },
       {
-        technology: 'Gulp/Webpack/rollup',
+        technology: 'HTML/CSS/LESS/SCSS',
+        level: 97
+      },
+      {
+        technology: 'Gulp/Webpack/ESBuild',
         level: 80
       },
       {
         technology: 'Angular',
-        level: 55
+        level: 45
       }
     ],
     backend: [
       {
+        technology: 'Serverless',
+        level: 85
+      },
+      {
         technology: 'Node.js',
-        level: 75
+        level: 85
       },
       {
         technology: 'MongoDB',
@@ -36,11 +44,11 @@ const general = {
       },
       {
         technology: 'MySQL,PostgeSQL',
-        level: 66
+        level: 70
       },
       {
         technology: 'Nginx',
-        level: 51
+        level: 60
       }
     ],
     other: [
@@ -51,12 +59,37 @@ const general = {
       'CI/CD',
       'SSR',
       'Unit Testing',
-      'Svelte'
+      'E2E Testing',
+      'Svelte',
+      'Terraform',
+      'Azure',
+      'Docker',
+      'K8s',
+      'WebAssembly/C/C++',
+      'Redis',
+      'NoSQL'
     ]
   }
 }
 
 const companyGeneralInfo = [
+  {
+    company: 'Tenging verslunarlausnir ehf',
+    technologies: [
+      'VueJS',
+      'Quasar',
+      'JS/TS',
+      'Webpack/ESBuild',
+      'Serverless',
+      'ExpressJS',
+      'NestJS',
+      'AWS/Azure Services',
+      'PostgeSQL',
+      'Terraform',
+      'Various CI/CD',
+      'Cypress'
+    ]
+  },
   {
     company: 'Distillery',
     technologies: [
@@ -95,9 +128,21 @@ export default {
     experience: [
       {
         ...companyGeneralInfo[0],
+        position: 'Web Team Lead',
+        startDate: 'August 2021',
+        tillDate: 'Present',
+        keyResponsobilities: [
+          'Mentoring new team members; Managing Web Team',
+          'Implementation of CI/CD and "Infrastructure as Code" principles',
+          'Performing Code Reviews and making architecture decisions',
+          'Making maintanable and reusable code'
+        ]
+      },
+      {
+        ...companyGeneralInfo[1],
         position: 'Fullstack Web Developer',
         startDate: 'April 2016',
-        tillDate: 'Present',
+        tillDate: 'July 2021',
         keyResponsobilities: [
           'Analyze client requirements and convert requirements to design documents',
           'Performing Code review',
@@ -106,7 +151,7 @@ export default {
         ]
       },
       {
-        ...companyGeneralInfo[1],
+        ...companyGeneralInfo[2],
         position: 'Junior Frontend Developer',
         startDate: 'July 2013',
         tillDate: 'December 2013',
@@ -125,7 +170,7 @@ export default {
     language: [
       {
         language: 'English',
-        level: 'Intermediate+'
+        level: 'B2'
       },
       {
         language: 'Russian',
@@ -135,7 +180,7 @@ export default {
     technologiesLabel: 'Technologies used',
     otherSkillsLabel: 'Other skills',
     interestsLabel: 'Interests',
-    interests: ['PC modding', 'Embedded electronics'],
+    interests: ['Embedded electronics', 'FPV Drones'],
     petProjectsTitle: 'Pet projects',
     petProjects: [
       {
@@ -189,9 +234,21 @@ export default {
     experience: [
       {
         ...companyGeneralInfo[0],
+        position: 'Web Team Lead',
+        startDate: 'Август 2021',
+        tillDate: 'Настоящее время',
+        keyResponsobilities: [
+          'Помощь новым членам команды; Управление веб-командой',
+          'Внедрение принципов CI/CD и "Infrastructure as Code"',
+          'Ревью кода и принятие архитектурных решений',
+          'Написание поддерживаемого и переиспользуемого кода'
+        ]
+      },
+      {
+        ...companyGeneralInfo[1],
         position: 'Fullstack Web разработчик',
         startDate: 'Апрель 2016',
-        tillDate: 'Настоящее время',
+        tillDate: 'Июль 2021',
         keyResponsobilities: [
           'Анализ требований и составление проектной документации',
           'Проведение Code Review',
@@ -200,7 +257,7 @@ export default {
         ]
       },
       {
-        ...companyGeneralInfo[1],
+        ...companyGeneralInfo[2],
         position: 'Junior Frontend Разработчик',
         startDate: 'Июль 2013',
         tillDate: 'Декабрь 2013',
@@ -219,17 +276,17 @@ export default {
     language: [
       {
         language: 'English',
-        level: 'Intermediate+'
+        level: 'B2'
       },
       {
         language: 'Русский',
-        level: 'Носитель'
+        level: 'Родной'
       }
     ],
     technologiesLabel: 'Основные технологии',
     otherSkillsLabel: 'Допольнительные навыки',
     interestsLabel: 'Интересы',
-    interests: ['Эксперименты с ПК железом', 'Электроника'],
+    interests: ['Электроника', 'FPV Дроны'],
     petProjectsTitle: 'Pet проекты',
     petProjects: [
       {
