@@ -135,7 +135,7 @@ export default {
           'Mentoring new team members; Managing Web Team',
           'Implementation of CI/CD and "Infrastructure as Code" principles',
           'Performing Code Reviews and making architecture decisions',
-          'Making maintanable and reusable code'
+          'Making maintainable and reusable code'
         ]
       },
       {
