@@ -33,13 +33,15 @@
         </li>
         <li class="links-list__elem">
           <a
-            :href="vk"
+            :href="linkedin"
             target="_blank"
             class="links-list__link"
             rel="noreferrer"
           >
-            <VkIcon />
-            <span class="links-list__link-text" v-text="vk" />
+            <LinkedinIcon />
+            <span class="links-list__link-text">
+              LinkedIn
+            </span>
           </a>
         </li>
         <li class="links-list__elem">
@@ -60,7 +62,7 @@ import content from '../content'
 import GithubIcon from './GithubIcon.vue'
 import EmailIcon from './EmailIcon.vue'
 import PhotoPlaceholder from './PhotoPlaceholder.vue'
-import VkIcon from './VkIcon.vue'
+import LinkedinIcon from './LinkedinIcon.vue'
 
 type contentType = { [key: string]: Object | Array<any> }
 
@@ -69,7 +71,7 @@ export default Vue.extend({
     GithubIcon,
     EmailIcon,
     PhotoPlaceholder,
-    VkIcon
+    LinkedinIcon
   },
   props: {
     lang: {

@@ -1,6 +1,6 @@
 const general = {
   github: 'https://github.com/haosx86',
-  vk: 'https://vk.com/xtxtv',
+  linkedin: 'https://www.linkedin.com/in/vladimir-terekhov-80301349/',
   email: 'haosx86+dev@gmail.com',
   skills: {
     frontend: [
@@ -10,15 +10,15 @@ const general = {
       },
       {
         technology: 'Vue/Nuxt',
-        level: 80
+        level: 78
       },
       {
-        technology: 'Javascript',
-        level: 95
+        technology: 'Javascript/Typescript',
+        level: 90
       },
       {
         technology: 'HTML/CSS/LESS/SCSS',
-        level: 97
+        level: 95
       },
       {
         technology: 'Gulp/Webpack/ESBuild',
@@ -40,7 +40,7 @@ const general = {
       },
       {
         technology: 'MongoDB',
-        level: 55
+        level: 65
       },
       {
         technology: 'MySQL,PostgeSQL',
@@ -60,19 +60,29 @@ const general = {
       'SSR',
       'Unit Testing',
       'E2E Testing',
-      'Svelte',
+      'Svelte/SvelteKit',
       'Terraform',
       'Azure',
       'Docker',
-      'K8s',
       'WebAssembly/C/C++',
       'Redis',
-      'NoSQL'
+      'NoSQL',
+      'NestJS'
     ]
   }
 }
 
 const companyGeneralInfo = [
+  {
+    company: 'Wisebits Group',
+    technologies: [
+      'Svelte/SvelteKit',
+      'NestJS',
+      'JS/TS',
+      'Docker',
+      'MongoDB'
+    ]
+  },
   {
     company: 'Tenging verslunarlausnir ehf',
     technologies: [
@@ -103,7 +113,8 @@ const companyGeneralInfo = [
       'MySQL',
       'HTML/CSS/LESS/Stylus',
       'Nginx',
-      'Wordpress'
+      'Wordpress',
+      'ExpressJS'
     ]
   },
   {
@@ -121,16 +132,26 @@ export default {
     headerNavLabel: 'External links',
     name: 'Vladimir Terekhov',
     emailLabel: 'Email me',
-    specialization: 'Fullstack Web developer',
+    specialization: 'Fullstack developer',
     skillsLabel: 'Skills',
     keyResponsobilitiesLabel: 'Key Responsobilities',
     experienceLabel: 'Work Experience',
     experience: [
       {
         ...companyGeneralInfo[0],
+        position: 'Fullstack Developer',
+        startDate: 'August 2023',
+        tillDate: 'January 2024',
+        keyResponsobilities: [
+          'Developing high-load web solutions',
+          'Perform Code Reviews'
+        ]
+      },
+      {
+        ...companyGeneralInfo[1],
         position: 'Web Team Lead',
         startDate: 'August 2021',
-        tillDate: 'Present',
+        tillDate: 'August 2023',
         keyResponsobilities: [
           'Mentoring new team members; Managing Web Team',
           'Implementation of CI/CD and "Infrastructure as Code" principles',
@@ -139,7 +160,7 @@ export default {
         ]
       },
       {
-        ...companyGeneralInfo[1],
+        ...companyGeneralInfo[2],
         position: 'Fullstack Web Developer',
         startDate: 'April 2016',
         tillDate: 'July 2021',
@@ -151,7 +172,7 @@ export default {
         ]
       },
       {
-        ...companyGeneralInfo[2],
+        ...companyGeneralInfo[3],
         position: 'Junior Frontend Developer',
         startDate: 'July 2013',
         tillDate: 'December 2013',
@@ -234,9 +255,19 @@ export default {
     experience: [
       {
         ...companyGeneralInfo[0],
+        position: 'Fullstack разработчик',
+        startDate: 'Август 2023',
+        tillDate: 'Январь 2024',
+        keyResponsobilities: [
+          'Разработка высоконагруженных web приложений',
+          'Ревью кода'
+        ]
+      },
+      {
+        ...companyGeneralInfo[1],
         position: 'Web Team Lead',
         startDate: 'Август 2021',
-        tillDate: 'Настоящее время',
+        tillDate: 'Август 2023',
         keyResponsobilities: [
           'Помощь новым членам команды; Управление веб-командой',
           'Внедрение принципов CI/CD и "Infrastructure as Code"',
@@ -245,8 +276,8 @@ export default {
         ]
       },
       {
-        ...companyGeneralInfo[1],
-        position: 'Fullstack Web разработчик',
+        ...companyGeneralInfo[2],
+        position: 'Fullstack разработчик',
         startDate: 'Апрель 2016',
         tillDate: 'Июль 2021',
         keyResponsobilities: [
@@ -257,7 +288,7 @@ export default {
         ]
       },
       {
-        ...companyGeneralInfo[2],
+        ...companyGeneralInfo[3],
         position: 'Junior Frontend Разработчик',
         startDate: 'Июль 2013',
         tillDate: 'Декабрь 2013',
