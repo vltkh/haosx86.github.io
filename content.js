@@ -1,7 +1,7 @@
 const general = {
-  github: 'https://github.com/haosx86',
+  github: 'https://github.com/vltkh',
   linkedin: 'https://www.linkedin.com/in/vladimir-terekhov-80301349/',
-  email: 'haosx86+dev@gmail.com',
+  email: 'vladimir.terekhov.128@gmail.com',
   skills: {
     frontend: [
       {
@@ -219,11 +219,11 @@ export default {
         links: [
           {
             text: 'Visualisation tool',
-            url: 'https://haosx86.github.io/chess-viewer/'
+            url: 'https://vltkh.github.io/chess-viewer/'
           },
           {
             text: 'GitHub Repo',
-            url: 'https://github.com/haosx86/chess-viewer'
+            url: 'https://github.com/vltkh/chess-viewer'
           },
           {
             text: 'Algebraic notation Wiki page',
@@ -240,7 +240,7 @@ export default {
         links: [
           {
             text: 'GitHub Repo',
-            url: 'https://github.com/haosx86/haosx86.github.io'
+            url: 'https://github.com/vltkh/vltkh.github.io'
           }
         ]
       }
@@ -346,11 +346,11 @@ export default {
         links: [
           {
             text: 'Визуализатор',
-            url: 'https://haosx86.github.io/chess-viewer/'
+            url: 'https://vltkh.github.io/chess-viewer/'
           },
           {
             text: 'GitHub репозиторий',
-            url: 'https://github.com/haosx86/chess-viewer'
+            url: 'https://github.com/vltkh/chess-viewer'
           },
           {
             text: 'Вики страница об Алгебраической нотации',
@@ -368,7 +368,7 @@ export default {
         links: [
           {
             text: 'GitHub Репозиторий',
-            url: 'https://github.com/haosx86/haosx86.github.io'
+            url: 'https://github.com/vltkh/vltkh.github.io'
           }
         ]
       }

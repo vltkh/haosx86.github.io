@@ -1,6 +1,6 @@
 # VTerekhov Resume
 
-![github pages](https://github.com/haosx86/haosx86.github.io/workflows/github%20pages/badge.svg?branch=source)
+![github pages](https://github.com/vltkh/vltkh.github.io/workflows/github%20pages/badge.svg?branch=source)
 
 ## Build Setup
 
