@@ -75,13 +75,7 @@ const general = {
 const companyGeneralInfo = [
   {
     company: 'Wisebits Group',
-    technologies: [
-      'Svelte/SvelteKit',
-      'NestJS',
-      'JS/TS',
-      'Docker',
-      'MongoDB'
-    ]
+    technologies: ['Svelte/SvelteKit', 'NestJS', 'JS/TS', 'Docker', 'MongoDB']
   },
   {
     company: 'Tenging verslunarlausnir ehf',
@@ -137,6 +131,18 @@ export default {
     keyResponsobilitiesLabel: 'Key Responsobilities',
     experienceLabel: 'Work Experience',
     experience: [
+      {
+        ...companyGeneralInfo[1],
+        position: 'Web Team Lead',
+        startDate: 'February 2024',
+        tillDate: 'Present',
+        keyResponsobilities: [
+          'Mentoring new team members; Managing Web Team',
+          'Implementation of CI/CD and "Infrastructure as Code" principles',
+          'Performing Code Reviews and making architecture decisions',
+          'Making maintainable and reusable code'
+        ]
+      },
       {
         ...companyGeneralInfo[0],
         position: 'Fullstack Developer',
@@ -253,6 +259,18 @@ export default {
     keyResponsobilitiesLabel: 'Основные обязанности',
     experienceLabel: 'Опыт работы',
     experience: [
+      {
+        ...companyGeneralInfo[1],
+        position: 'Web Team Lead',
+        startDate: 'Февраль 2024',
+        tillDate: 'Настоящее время',
+        keyResponsobilities: [
+          'Помощь новым членам команды; Управление веб-командой',
+          'Внедрение принципов CI/CD и "Infrastructure as Code"',
+          'Ревью кода и принятие архитектурных решений',
+          'Написание поддерживаемого и переиспользуемого кода'
+        ]
+      },
       {
         ...companyGeneralInfo[0],
         position: 'Fullstack разработчик',
